@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main style="max-width: 850px; margin: auto; background: #fffdfc; padding: 2rem; border-radius: 12px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);">
+    <h2 style="text-align: center; color: #b71c1c; margin-bottom: 1.5rem;">📊 About This Project</h2>
+
+    <p style="font-size: 1.1rem; margin-bottom: 1.2rem;">
+        This web application is developed using <strong>Flask</strong> and <strong>Machine Learning</strong> techniques. It utilizes a <strong>Random Forest Classifier</strong> trained on medical data to predict the likelihood of heart disease.
+    </p>
+
+    <h3 style="margin-top: 1.5rem; color: #444;">🔍 Key Details:</h3>
+    <ul style="font-size: 1.05rem; line-height: 1.8; padding-left: 1.5rem;">
+        <li><strong>Dataset:</strong> UCI Heart Disease Dataset</li>
+        <li><strong>Model Used:</strong> Random Forest Classifier</li>
+        <li><strong>Accuracy:</strong> Approximately 80%</li>
+        <li><strong>Disclaimer:</strong> This tool is built for educational and demonstration purposes only. It is <u>not intended for real-world medical diagnosis</u>.</li>
+    </ul>
+
+    <p style="margin-top: 2rem; font-style: italic; font-size: 0.95rem; color: #555;">
+        Always consult a certified medical professional for health-related decisions.
+    </p>
+</main>
+{% endblock %}

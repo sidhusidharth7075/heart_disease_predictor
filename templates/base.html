@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>❤️ Heart Disease Predictor</h1>
+        <nav>
+            <a href="/">Home</a>
+            
+            <a href="/data">Dataset Info</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2025 Heart AI | Built with Flask & ML</p>
+    </footer>
+</body>
+</html>

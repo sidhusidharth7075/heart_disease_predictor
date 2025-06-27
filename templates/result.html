@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main style="max-width: 700px; margin: auto; padding: 2rem; background: #fffefc; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.05); text-align: center;">
+
+    <h2 style="color: #b71c1c; margin-bottom: 1.5rem;">🔎 Prediction Result</h2>
+
+    <div style="padding: 1.5rem; background-color: #fce4ec; border: 2px solid #f06292; border-radius: 10px; display: inline-block; font-size: 1.2rem; font-weight: 600; color: #880e4f;">
+        {{ result }}
+    </div>
+
+    {% if suggestion %}
+    <div style="margin-top: 2rem; padding: 1.2rem; background-color: #f3f3f3; border-left: 6px solid #4caf50; font-size: 1rem; border-radius: 6px; text-align: left;">
+        <strong>Suggestion:</strong><br>
+        {{ suggestion }}
+    </div>
+    {% endif %}
+
+    <br><br>
+
+    <a href="/predict" style="text-decoration: none;">
+        <button style="background-color: #1976d2; color: white; padding: 12px 28px; font-size: 1rem; border: none; border-radius: 8px; cursor: pointer; transition: background 0.3s;">
+            🔁 Try Again
+        </button>
+    </a>
+</main>
+{% endblock %}
